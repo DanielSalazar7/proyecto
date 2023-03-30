@@ -9,18 +9,20 @@ import { HomeRoutingModule } from './home/home-routing.module';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
     FooterComponent,
     HeaderComponent,
-    
+
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
