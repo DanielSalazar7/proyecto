@@ -1,5 +1,5 @@
 import { Component, OnInit, TemplateRef, ViewChild } from '@angular/core';
-import { MatDialog } from '@angular/material';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-home',
@@ -7,25 +7,18 @@ import { MatDialog } from '@angular/material';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  public modalThanks: any;
-  public submit: boolean;
   @ViewChild('thanks') thanks!: TemplateRef<any>;
   constructor(
     private dialog: MatDialog
     ){
-    this.submit = false;
   }
 
   ngOnInit(): void {}
   openDialog() {
-    const dialog = this.modalThanks.open(this.dialog, {
+    const dialog = this.dialog.open(this.thanks, {
       width: '850px',
-      height: 'auto',
+      height: '600px',
       disableClose: false,
     });
-  }
-
-  close() {
-    this.modalThanks.close();
   }
 }
