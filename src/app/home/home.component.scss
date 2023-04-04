@@ -4,3 +4,9 @@
   text-align: center;
   background-image: url('../../assets/fondo.jpg');
 }
+
+.thanksContainer{
+  display: grid;
+  grid-template-columns: 1fr;
+  background-color: black;
+}

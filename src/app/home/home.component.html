@@ -1,15 +1,22 @@
 <section class="sectionHome">
-<h1>PORTAL DE PROVEEDORES</h1>
-<button type="button" class="btn btn-primary" type="submit"> Iniciar Sesion </button>
+  <ng-container >
+  <h1>PORTAL DE PROVEEDORES</h1>
+  <button class="btn btn-primary"  (click)="openDialog()">
+    Iniciar Sesion
+  </button>
+</ng-container>
 </section>
-
 <ng-template #thanks>
-    <div class="thanksContainer">
-      <button mat-button mat-dialog-close (click)="close()">
-        <img src="../../../assets/general/btn_close.svg" alt="Agtrac-Cerrar" />
-      </button>
-      <h2>¡Gracias!</h2>
-      <h5>Tus datos se han enviado correctamente</h5>
-      <p>En breve uno de nuestros asesores se pondrá en comunicación contigo.</p>
-    </div>
-  </ng-template>
+  <div class="thanksContainer">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+  </div>
+</ng-template>
