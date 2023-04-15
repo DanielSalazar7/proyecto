@@ -4,19 +4,22 @@
   <button class="btn btn-primary"  (click)="openDialog()">
     Iniciar Sesion
   </button>
+
+
 </ng-container>
 </section>
 <ng-template #thanks>
   <div class="thanksContainer">
-      <label for="uname"><b>Username</b></label>
-      <input type="text" placeholder="Enter Username" name="uname" required>
-
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
-
-      <button type="submit">Login</button>
+      <label for="uname"><b>Usuario o Correo electronico</b></label>
+      <input type="text" placeholder="Ingresa Usuario" name="uname" required>
+     
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="Ingresa Password" name="psw" required>
+     
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
+      <br>
+      <button class="btn btn-primary btn-sm" type="submit">Ingresar</button>
   </div>
 </ng-template>
