@@ -1,9 +1,45 @@
 <section class="sectionHeader">
   <div class="header">
-      <img src="../../../assets/logo.svg" alt="logo" class="logo" />
+    <img src="../../../assets/logo.svg" alt="logo" class="logo" />
     <div class="header-right">
-      <button type="button" class="btn btn-primary">Iniciar Sesion</button>
-      <button type="button" class="btn btn-success">Registrarse</button>
+      <button type="button" class="btn btn-primary" (click)="DialogLogIn()">
+        Iniciar Sesion
+      </button>
+      <button type="button" class="btn btn-success" (click)="DialogSignUp()">
+        Registrarse
+      </button>
     </div>
   </div>
 </section>
+
+<!-- template para iniciar Sesion -->
+<ng-template #logIn>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required />
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required />
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" /> Remember me
+    </label>
+  </div>
+</ng-template>
+
+<!-- template para registrarse -->
+<ng-template #signUp>
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required />
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required />
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" /> Remember me
+    </label>
+  </div>
+</ng-template>

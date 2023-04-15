@@ -8,10 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
 })
 export class HomeComponent implements OnInit {
   @ViewChild('thanks') thanks!: TemplateRef<any>;
-  constructor(
-    private dialog: MatDialog
-    ){
-  }
+  constructor(private dialog: MatDialog) {}
 
   ngOnInit(): void {}
   openDialog() {
