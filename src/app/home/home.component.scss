@@ -1,22 +1,48 @@
-.sectionHome{
-  padding-top:200px;
+.sectionHome {
+  padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
-  background-image: url('../../assets/fondo.jpg');
+  background-image: url("../../assets/fondo.jpg");
+}
+.logotipo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+ }
+.container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 120px;
+  padding-right: 120px;
+  .formData {
+    display: grid;
+    grid-template-columns: 1fr;
+    .inputUser{
+      margin-bottom: 20px;
+    }
+    input{
+      // aqui va el tamaño del input
+      padding: 20px 30px;
+    }
+    input:focus {
+      background-color: #4A60AB;
+    }
+  }
+  .buttonsForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    .btnInit{
+      // tamaño del boton
+      justify-self: center;
+    }
+    a{
+      padding-top: 30px;
+      justify-self: flex-end;
+      text-decoration: none;
+      color: black;
+    }
+  }
 }
 
-.thanksContainer{
-  
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 50px 100px;
-  
 
-}
-
-.logotipo{
-    max-width: 200px;
-    margin-left: 150px;
-    margin-top: 50px;
-  
-}
