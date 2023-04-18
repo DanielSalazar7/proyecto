@@ -13,8 +13,8 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {}
   openDialog() {
     const dialog = this.dialog.open(this.thanks, {
-      width: '850px',
-      height: '600px',
+      width: '500px',
+      height: '500px',
       disableClose: false,
     });
   }

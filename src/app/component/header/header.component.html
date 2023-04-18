@@ -14,32 +14,36 @@
 
 <!-- template para iniciar Sesion -->
 <ng-template #logIn>
-  <div class="container">
+  <div class="containerlogin">
+    
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required />
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required />
 
-    <button type="submit">Login</button>
     <label>
       <input type="checkbox" checked="checked" name="remember" /> Remember me
     </label>
+    <br>
+    <button type="submit">Login</button>
   </div>
 </ng-template>
 
 <!-- template para registrarse -->
 <ng-template #signUp>
-  <div class="container">
+  <div class="containerregistro">
     <label for="uname"><b>Username</b></label>
     <input type="text" placeholder="Enter Username" name="uname" required />
 
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" required />
 
-    <button type="submit">Login</button>
+    
     <label>
       <input type="checkbox" checked="checked" name="remember" /> Remember me
     </label>
+    <br>
+    <button  type="submit">Registrarse</button>
   </div>
 </ng-template>

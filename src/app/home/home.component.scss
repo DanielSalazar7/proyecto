@@ -6,20 +6,17 @@
 }
 
 .thanksContainer{
+  
   display: grid;
   grid-template-columns: 1fr;
-  padding: 200px;
+  padding: 50px 100px;
   
+
 }
-.ingresar{
-  background-color:blue;
-  color:white;
-  margin: 10px;
-  
-}
-.btn-sm {
-	background-color:blue;
-	border-color: #7b7b7b;
-	color:#FFFFFF;
+
+.logotipo{
+    max-width: 200px;
+    margin-left: 150px;
+    margin-top: 50px;
   
 }

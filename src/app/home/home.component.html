@@ -2,24 +2,28 @@
   <ng-container >
   <h1>PORTAL DE PROVEEDORES</h1>
   <button class="btn btn-primary"  (click)="openDialog()">
-    Iniciar Sesion
+    Iniciar sesión
   </button>
 
 
 </ng-container>
 </section>
 <ng-template #thanks>
+  <img src="../../../assets/logotipo.jpg" alt="logotipo" class="logotipo" />
   <div class="thanksContainer">
       <label for="uname"><b>Usuario o Correo electronico</b></label>
-      <input type="text" placeholder="Ingresa Usuario" name="uname" required>
-     
+      <input type="text" placeholder="Usuario" name="uname" required>
+      
       <label for="psw"><b>Contraseña</b></label>
-      <input type="password" placeholder="Ingresa Password" name="psw" required>
+      <input type="password" placeholder="Contraseña" name="psw" required>
      
       <label>
         <input type="checkbox" checked="checked" name="remember"> Remember me
       </label>
       <br>
-      <button class="btn btn-primary btn-sm" type="submit">Ingresar</button>
+      <button class="btn btn-primary" type="submit">Iniciar sesión</button>
+      <br>
+      <br>
+      <a style="text-align:right" href="Password"> ¿Olvidastes tu Contraseña?</a>
   </div>
 </ng-template>
