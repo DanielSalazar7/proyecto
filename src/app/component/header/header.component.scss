@@ -3,6 +3,9 @@
   padding-top: 20px;
   padding-bottom: 20px;
   overflow: hidden;
+  .btnstar{
+    background-color: #1682CE;
+  }
   .logo {
     max-width: 200px;
     margin-left: 100px;
@@ -19,14 +22,86 @@
     }
   }
 }
+
+.container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 80px;
+  padding-right: 80px;
+  .formData {
+    display: grid;
+    grid-template-columns: 1fr;
+    .inputUser{
+      margin-bottom: 20px;
+    }
+    input{
+      // aqui va el tamaño del input
+      padding: 5px 5px;
+    }
+    input:focus {
+      background-color:white;
+    }
+  }
+  .buttonsForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    .btnInit{
+      // tamaño del boton
+      justify-content: center;
+      background-color: #1682CE;
+    }
+    a{
+      padding-top: 30px;
+      justify-self: flex-end;
+      text-decoration: none;
+      color: rgb(0, 17, 253);
+    }
+  }
+}
 .containerlogin{
   display: grid;
   grid-template-columns: 1fr;
   padding: 200px;
   
 }
-.containerregistro{
-  display: grid;
-  grid-template-columns: 1fr;
-  padding: 200px;
-}
+
+.logotipo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+ }
+
+ .containerregistro{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 80px;
+  padding-right: 80px;
+   .formregistro{
+    display: grid;
+    grid-template-columns: 1fr;
+    .inputReg{
+      margin-bottom: 80px;
+    }
+     input{
+      // aqui va el tamaño del input
+      padding: 5px 5px;
+      margin-top: 5px;
+      
+    }
+    input:focus {
+      background-color:white;
+    }
+   }
+   .buttonsRegis{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    .btnReg{
+      justify-content: center;
+    }
+   }
+   
+   
+ }
+ 

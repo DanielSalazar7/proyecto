@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   openDialog() {
     const dialog = this.dialog.open(this.thanks, {
       width: '500px',
-      height: '500px',
+      height: '450px',
       disableClose: false,
     });
   }

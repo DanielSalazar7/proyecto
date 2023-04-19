@@ -13,14 +13,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {}
   DialogLogIn() {
     const dialog = this.dialog.open(this.logIn, {
-      width: '850px',
-      height: '600px',
+      width: '500px',
+      height: '450px',
       disableClose: false,
     });
   }
   DialogSignUp() {
     const dialog = this.dialog.open(this.signUp, {
-      width: '850px',
+      width: '600px',
       height: '600px',
       disableClose: false,
     });

@@ -2,11 +2,11 @@
   <div class="header">
     <img src="../../../assets/logo.svg" alt="logo" class="logo" />
     <div class="header-right">
-      <button type="button" class="btn btn-primary" (click)="DialogLogIn()">
-        Iniciar Sesion
+      <button type="button" class="btn btn-primary btnstar" (click)="DialogLogIn()">
+        Iniciar sesión
       </button>
       <button type="button" class="btn btn-success" (click)="DialogSignUp()">
-        Registrarse
+        Regístrate
       </button>
     </div>
   </div>
@@ -14,36 +14,51 @@
 
 <!-- template para iniciar Sesion -->
 <ng-template #logIn>
-  <div class="containerlogin">
-    
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required />
+  <div class="logotipo">
+    <img src="../../../assets/logotipo.jpg" alt="logotipo" />
+  </div>
+  <div class="container">
+    <div class="formData">
+      <label for="uname"><b>Usuario</b></label>
+      <input class="inputUser" type="text" placeholder="Usuario" name="uname" required />
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required />
-
-    <label>
-      <input type="checkbox" checked="checked" name="remember" /> Remember me
-    </label>
-    <br>
-    <button type="submit">Login</button>
+      <label for="psw"><b>Contraseña</b></label>
+      <input type="password" placeholder="* * * * * * * *" name="psw" required />
+    </div>
+    <div class="buttonsForm">
+      <button class="btn btn-primary btnInit" type="submit">Iniciar sesión</button>
+      <a href="Password"> ¿Olvidaste tu Contraseña?</a>
+    </div>
   </div>
 </ng-template>
 
 <!-- template para registrarse -->
 <ng-template #signUp>
+  <div class="logotipo">
+    <img src="../../../assets/logotipo.jpg" alt="logotipo" />
+  </div>
   <div class="containerregistro">
-    <label for="uname"><b>Username</b></label>
-    <input type="text" placeholder="Enter Username" name="uname" required />
+    <div class="formregistro">
+    <label for="uname"><b>Nombre completo</b></label>
+    <input  type="text" placeholder="Nombre" name="uname" required />
 
-    <label for="psw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="psw" required />
+    <label for="uname"><b>RFC</b></label>
+    <input  type="text" placeholder="RFC" name="uname" required />
 
-    
-    <label>
-      <input type="checkbox" checked="checked" name="remember" /> Remember me
-    </label>
-    <br>
-    <button  type="submit">Registrarse</button>
+    <label for="uname"><b>Codigo de proveedor</b></label>
+    <input  type="text" placeholder="Codigo de proveedor" name="uname" required />
+
+    <label for="uname"><b>Correo electrónico</b></label>
+    <input  type="text" placeholder="correo electrónico" name="uname" required />
+
+    <label for="psw"><b>Contraseña</b></label>
+    <input  type="password" placeholder="Contraseña" name="psw" required />
+     
+    <label for="psw"><b>Confirmar contraseña</b></label>
+    <input  type="password" placeholder="Confirmar contraseña" name="psw" required />
+    </div>
+    <div class="buttonsRegis">
+    <button class="btn btn-success btnReg" type="submit">Registrarse</button>
+    </div>
   </div>
 </ng-template>
