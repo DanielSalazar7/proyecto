@@ -1,0 +1,32 @@
+.sectionHeader {
+  background-color: var(--dark-blue);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  .logo {
+    max-width: 200px;
+    margin-left: 100px;
+  }
+  .header-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    float: right;
+    margin-top: 20px;
+  }
+  @media screen and (max-width: 500px) {
+    .header-right {
+      float: none;
+    }
+  }
+}
+.containerlogin{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 200px;
+  
+}
+.containerregistro{
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 200px;
+}
