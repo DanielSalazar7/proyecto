@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --dark-blue: #2f3c66;
+  --white: #fff;
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: var(--white);
+}
+.btn{
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

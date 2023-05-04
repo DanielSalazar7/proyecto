@@ -1,0 +1,48 @@
+.sectionHome {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-image: url("../../assets/fondo.jpg");
+}
+.logotipo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+ }
+.container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 80px;
+  padding-right: 80px;
+  .formData {
+    display: grid;
+    grid-template-columns: 1fr;
+    .inputUser{
+      margin-bottom: 20px;
+    }
+    input{
+      // aqui va el tamaño del input
+      padding: 5px 5px;
+    }
+    input:focus {
+      background-color:white;
+    }
+  }
+  .buttonsForm{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    .btnInit{
+      // tamaño del boton
+      justify-content: center;
+    }
+    a{
+      padding-top: 30px;
+      justify-self: flex-end;
+      text-decoration: none;
+      color: rgb(0, 17, 253);
+    }
+  }
+}
+
+
