@@ -4,15 +4,31 @@
   --white: #fff;
 }
 
-h1{
-  font-family: 'Montserrat', sans-serif;
+h1 {
+  font-family: "Montserrat", sans-serif;
   font-weight: bold;
   color: var(--white);
 }
-.btn{
+.btn {
   margin-left: 30px;
   margin-right: 30px;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.errorText {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #f44336;
+  display: none;
+  &.activeErrorText {
+    display: block;
+  }
+}

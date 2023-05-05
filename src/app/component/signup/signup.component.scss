@@ -1,0 +1,80 @@
+.container {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 80px;
+  padding-right: 80px;
+  .formData {
+    display: grid;
+    grid-template-columns: 1fr;
+    .inputUser {
+      margin-bottom: 20px;
+    }
+    input {
+      // aqui va el tamaño del input
+      padding: 5px 5px;
+    }
+    input:focus {
+      background-color: white;
+    }
+  }
+  .buttonsForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    .btnInit {
+      // tamaño del boton
+      justify-content: center;
+      background-color: #1682ce;
+    }
+    a {
+      padding-top: 30px;
+      justify-self: flex-end;
+      text-decoration: none;
+      color: #4389bf;
+    }
+  }
+}
+.logotipo {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  img {
+    width: 250px;
+  }
+}
+
+.containerregistro {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  padding-left: 80px;
+  padding-right: 80px;
+  .formregistro {
+    display: grid;
+    grid-template-columns: 1fr;
+    .contra {
+      color: green;
+    }
+    .avi {
+      color: red;
+    }
+    .inputReg {
+      margin-bottom: 80px;
+    }
+    input {
+      // aqui va el tamaño del input
+      padding: 5px 5px;
+      margin-top: 5px;
+    }
+    input:focus {
+      background-color: white;
+    }
+  }
+  .buttonsRegis {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    .btnReg {
+      justify-content: center;
+    }
+  }
+}

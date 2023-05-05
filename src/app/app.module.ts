@@ -9,12 +9,14 @@ import { HomeRoutingModule } from './home/home-routing.module';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatDialogModule } from '@angular/material/dialog';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { PrivacidadComponent } from './privacidad/privacidad.component';
+import { LoginComponent } from './component/login/login.component';
+import { SignupComponent } from './component/signup/signup.component';
 
 
 @NgModule({
-  declarations: [AppComponent, FooterComponent, HeaderComponent, PrivacidadComponent,],
+  declarations: [AppComponent, FooterComponent, HeaderComponent, PrivacidadComponent, LoginComponent, SignupComponent,],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -23,7 +25,8 @@ import { PrivacidadComponent } from './privacidad/privacidad.component';
     BrowserAnimationsModule,
     MatDialogModule,
     FormsModule,
-    
+    ReactiveFormsModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent],

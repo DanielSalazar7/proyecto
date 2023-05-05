@@ -1,0 +1,98 @@
+<section class="signUp">
+  <div class="logotipo">
+    <img src="../../../assets/logotipo.png" alt="logotipo" />
+  </div>
+  <div class="containerregistro">
+    <form [formGroup]="myForm" (ngSubmit)="saveForm()">
+      <div class="formregistro">
+        <label for="uname"><b>Nombre completo</b></label>
+        <input
+          type="text"
+          id="name"
+          placeholder="Nombre"
+          formControlName="name"
+          name="name"
+          required
+          [ngClass]="{
+            errorForm: submitted && form['name'].errors
+          }"
+        />
+        <p
+          class="errorText"
+          [ngClass]="{
+            activeErrorText: submitted && form['name'].errors
+          }"
+        >
+          hace falta el nombre
+        </p>
+
+        <label for="uname"><b>RFC</b></label>
+        <input type="text" oninput="this.value = this.value.toUpperCase()" placeholder="RFC" name="uname" required />
+
+        <label for="uname"><b>Correo electrónico</b></label>
+        <input
+          type="text"
+          placeholder="Correo electrónico"
+          name="uname"
+          required
+        />
+
+        <label for="uname"><b>Nombre de Contacto</b></label>
+        <input type="text" placeholder="Contacto" name="uname" required />
+
+        <label for="uname"><b>Teléfono de Contacto</b></label>
+        <input
+          type="text"
+          placeholder="Número de teléfono"
+          name="uname"
+          required
+        />
+
+        <label for="uname"><b>Codigo de proveedor</b></label>
+        <input
+          type="text"
+          placeholder="Codigo de proveedor"
+          name="uname"
+          required
+        />
+
+        <label for="psw"><b>Contraseña</b></label>
+        <input
+          id="pass"
+          type="password"
+          placeholder="Contraseña"
+          formControlName="pass"
+          name="pass"
+          required
+          [ngClass]="{
+            errorForm: submitted && form['pass'].errors
+          }"
+        />
+        <p
+          class="errorText"
+          [ngClass]="{
+            activeErrorText: submitted && form['pass'].errors
+          }"
+        >
+          La contraseña debería cumplir con los siguientes requerimientos:
+          <br />
+          Longitud mínima de 8 caracteres, una letra mayúscula, una letra
+          minúscula, un digito, un carácter especial (@,$,#).
+        </p>
+
+        <label for="psw"><b>Confirmar contraseña</b></label>
+        <input
+          type="password"
+          placeholder="Confirmar contraseña"
+          name="psw"
+          required
+        />
+      </div>
+      <div class="buttonsRegis">
+        <button class="btn btn-success btnReg" type="submit">
+          Registrarse
+        </button>
+      </div>
+    </form>
+  </div>
+</section>
